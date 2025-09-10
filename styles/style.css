@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -52,12 +55,6 @@ ol {
 
 /* общие стили */
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content {
   display: flex;
   align-items: end;
@@ -77,7 +74,7 @@ ol {
 
 .button {
   border: 1px solid #fff;
-  color: #fff;
+  color: currentColor;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -167,9 +164,7 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-
-  background-color: #1b1919;
-
+  background-color: transparent;
   appearance: none;
 }
 
@@ -240,7 +235,7 @@ ol {
   gap: 30px;
   height: 298px;
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .content__list {
@@ -297,6 +292,7 @@ ol {
   font-size: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
